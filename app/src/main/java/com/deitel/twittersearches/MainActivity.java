@@ -135,7 +135,7 @@ public class MainActivity extends ListActivity
          // get query string and create a URL representing the search
          String tag = ((TextView) view).getText().toString();
          String urlString = getString(R.string.searchURL) +
-            Uri.encode(savedSearches.getString(tag, ""), "UTF-8");
+                 Uri.encode(savedSearches.getString(tag, ""), "UTF-8");
          
          // create an Intent to launch a web browser    
          Intent webIntent = new Intent(Intent.ACTION_VIEW, 
